@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b53851d4fb.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="credit-card-container">
+        <div class="card-number-container">
+            <label class="card-number-label">Card number</label>
+            <input type="text" onkeypress="return (event.charCode !=8 && event.charCode == 0 || (event.charCode >= 48 && event.charCode <= 57))"
+                class="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="19">
+            <img src="card_Default.png" class="card-img">
+        </div>
+        <div class="card-holder-container">
+            <label class="card-holder-label">Card holder</label>
+            <input type="text" class="card-holder" placeholder="e.g. John Smith">
+        </div>
+        <div class="card-expiry-date-container">
+            <label class="card-expiry-date-label">Expiry date</label>
+            <input type="text" onkeypress="return (event.charCode !=8 && event.charCode == 0 || (event.charCode >= 48 && event.charCode <= 57))"
+                class="card-expiry-date" placeholder="DD/MM" maxlength="5">
+
+            <label class="card-cvv-label">CVV</label>
+            <input type="text" onkeypress="return (event.charCode !=8 && event.charCode == 0 || (event.charCode >= 48 && event.charCode <= 57))"
+                class="card-cvv" placeholder="XXX" maxlength="3">
+        </div>
+        <button class="pay-button">Pay</button>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>

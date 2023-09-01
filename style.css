@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    background: linear-gradient(250deg, rgba(199,8,63,1) 0%, rgba(22,24,25,1) 100%);
+    background-attachment: fixed;
+}
+
+.credit-card-container {
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid white;
+    width: 550px;
+    height: 675px;
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-number-container {
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 125px;
+}
+
+.card-cvv-label,
+.card-expiry-date-label,
+.card-holder-label,
+.card-number-label {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 49px;
+}
+
+.card-number {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding-left: 15px;
+    font-size: 22px;
+    width: 265px;
+    height: 51px;
+    top: 22px;
+    left: 49px;
+}
+
+.card-cvv:focus,
+.card-expiry-date:focus,
+.card-holder:focus,
+.card-number:focus {
+    outline: none;
+}
+
+.card-cvv::placeholder,
+.card-expiry-date::placeholder,
+.card-holder::placeholder,
+.card-number::placeholder {
+    color: black;
+    font-size: 22px;
+}
+
+.card-img {
+    position: relative;
+    height: 58px;
+    top: 43px;
+    left: 69px;
+}
+
+.card-holder-container {
+    position: relative;
+    width: 500px;
+    height: 125px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-holder {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding-left: 15px;
+    font-size: 22px;
+    width: 381px;
+    height: 51px;
+    top: 45px;
+    left: 49px;
+}
+
+.card-expiry-date-container {
+    position: relative;
+    width: 500px;
+    height: 125px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-expiry-date {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding-left: 15px;
+    font-size: 22px;
+    width: 150px;
+    height: 51px;
+    top: 45px;
+    left: 49px;
+}
+
+.card-cvv-label {
+    left: 280px;
+}
+
+.card-cvv {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding-left: 15px;
+    font-size: 22px;
+    width: 150px;
+    height: 51px;
+    top: 45px;
+    left: 103px;
+}
+
+.pay-button {
+    position: relative;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: transparent;
+    width: 165px;
+    height: 65px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: white;
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+
+.pay-button:hover {
+    background-color: white;
+    color: #461323;
+}
