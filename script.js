@@ -73,7 +73,9 @@ cardExpiryDate.addEventListener('input', () => { // Automatically put a backslas
 
 payButton.addEventListener('click', () => {
     if (isNumberValid(cardNumber) && isExpiryDateValid(cardExpiryDate) && isCvvValid(cardCvv)) {
-        alert(`${cardHolder.value} has successfully paid with XXXX-XXXX-XXXX-${cardNumber.value.slice(15, 21)}!`);
+        alert(
+            `${cardHolder.value} has successfully completed a transaction with XXXX-XXXX-XXXX-${cardNumber.value.slice(15, 21)}!`
+        );
     } else {
         alert("An error has occurred, please try again!");
     } 

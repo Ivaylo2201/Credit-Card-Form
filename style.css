@@ -27,6 +27,24 @@ body {
     height: 125px;
 }
 
+.card-holder-container {
+    position: relative;
+    width: 500px;
+    height: 125px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-expiry-date-container {
+    position: relative;
+    width: 500px;
+    height: 125px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .card-cvv-label,
 .card-expiry-date-label,
 .card-holder-label,
@@ -40,6 +58,9 @@ body {
     left: 49px;
 }
 
+.card-cvv,
+.card-expiry-date,
+.card-holder,
 .card-number {
     position: relative;
     font-family: 'Montserrat', sans-serif;
@@ -75,44 +96,14 @@ body {
     left: 69px;
 }
 
-.card-holder-container {
-    position: relative;
-    width: 500px;
-    height: 125px;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .card-holder {
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    border: 3px solid white;
-    border-radius: 20px;
-    padding-left: 15px;
-    font-size: 22px;
     width: 381px;
     height: 51px;
     top: 45px;
     left: 49px;
 }
 
-.card-expiry-date-container {
-    position: relative;
-    width: 500px;
-    height: 125px;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .card-expiry-date {
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    border: 3px solid white;
-    border-radius: 20px;
-    padding-left: 15px;
-    font-size: 22px;
     width: 150px;
     height: 51px;
     top: 45px;
@@ -124,12 +115,6 @@ body {
 }
 
 .card-cvv {
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    border: 3px solid white;
-    border-radius: 20px;
-    padding-left: 15px;
-    font-size: 22px;
     width: 150px;
     height: 51px;
     top: 45px;
